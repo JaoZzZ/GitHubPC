@@ -16,7 +16,7 @@ public class Processador {
         nucleos=4.2;
         
     }
-    public Processador(int nucleos){
+    public Processador(double nucleos){
         this.nucleos=nucleos;
         
     }

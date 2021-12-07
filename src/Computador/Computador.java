@@ -14,6 +14,11 @@ public class Computador {
   Processador processador;
   PlacadeVideo placadevideo;
   Hd hd;
+
+    Computador() {
+    
+    }
+
   
   public void Computador(){
       memoriaram = new MemoriaRAM();
@@ -31,6 +36,22 @@ public class Computador {
         System.out.println("tamanho do HD: "+hd.getTamanho());
   }
   
+   public void ligarPelaPrimeiraVez(){
+        memoriaram = new MemoriaRAM();
+        
+    }
+    
+    public void ligarPelaPrimeiraVez(int quantidade, double nucleos, String modelo, int tamanho){
+        memoriaram = new MemoriaRAM(quantidade);
+        
+    }
+    
+    public Computador(int quantidade, double nucleos, String modelo, int tamanho){
+        memoriaram = new MemoriaRAM(quantidade); 
+        processador = new Processador(nucleos);
+        placadevideo = new PlacadeVideo(modelo);
+        hd = new Hd(tamanho);
+    }
       
   
 }

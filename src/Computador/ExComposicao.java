@@ -11,10 +11,15 @@ package Computador;
  */
 public class ExComposicao {
    public static void main(String[] args) {
-        Computador computador = new Computador();
+       
+        Computador pc = new Computador();
         
         
-        computador.imprimeDadosComputador();
+        Computador pc2 = new Computador(8, 4.2, "Rx550", 500);
+        
+        
+        pc.imprimeDadosComputador();
+        pc2.imprimeDadosComputador();
         
    } 
 }
